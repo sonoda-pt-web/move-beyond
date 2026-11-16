@@ -49,6 +49,14 @@
   /* ---- Demo form ---- */
   const form = document.querySelector('.reserve-form');
   const msg = form.querySelector('.form-msg');
+
+  /* ---- Program buttons: preselect the program in the form ---- */
+  const programSelect = form.querySelector('select[name="program"]');
+  document.querySelectorAll('[data-program]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      programSelect.value = btn.dataset.program;
+    });
+  });
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!form.checkValidity()) {

@@ -53,8 +53,9 @@
           <a href="#program" class="btn">プログラムを見る</a>
         </div>
       </div>
-      <div class="hero__visual ph" role="img" aria-label="トレーナーの指導のもと、選手がトレーニングを行っている様子（仮画像）">
-        <span class="ph__tag">PHOTO / TRAINING</span>
+      <div class="hero__visual media">
+        <img src="images/hero.svg" alt="選手がスプリントやジャンプのトレーニングを行っている様子（仮画像）" width="1500" height="1000">
+        <span class="media__note" aria-hidden="true">写真：スプリント／ジャンプ</span>
         <div class="speed-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
       </div>
       <div class="hero__scroll" aria-hidden="true"><span>SCROLL</span></div>
@@ -98,36 +99,48 @@
           <p class="sec-head__ja">プログラム</p>
         </header>
 
-        <article class="program-card reveal">
-          <div class="program-card__img ph" role="img" aria-label="選手がスプリントやジャンプのトレーニングを行っている様子（仮画像）"><span class="ph__tag">PHOTO / 01</span></div>
+        <article class="program-card program-card--a reveal">
+          <div class="program-card__img media">
+            <img src="images/program-strength.svg" alt="選手が筋力トレーニングを行っている様子（仮画像）" width="1500" height="1000" loading="lazy">
+            <span class="media__note" aria-hidden="true">写真：筋力トレーニング</span>
+          </div>
           <div class="program-card__body">
             <p class="program-card__no">PROGRAM 01</p>
             <h3 class="program-card__title">PERFORMANCE</h3>
             <p class="program-card__ja">パフォーマンス向上</p>
             <p>スプリント、ジャンプ、方向転換など競技に直結する動きを強化。測定データをもとに、筋力・パワー・スピードを段階的に高めます。</p>
             <ul class="tags"><li>競技者</li><li>部活生</li><li>60分</li></ul>
+            <a href="#reserve" class="btn btn--accent program-card__cta" data-program="performance">このプログラムで体験予約<span class="arrow">→</span></a>
           </div>
         </article>
 
-        <article class="program-card reveal">
-          <div class="program-card__img ph" role="img" aria-label="トレーナーが姿勢や可動域を確認しながらコンディショニングを行っている様子（仮画像）"><span class="ph__tag">PHOTO / 02</span></div>
+        <article class="program-card program-card--b reveal">
+          <div class="program-card__img media">
+            <img src="images/program-conditioning.svg" alt="トレーナーが姿勢や可動域を確認しながらコンディショニングを行っている様子（仮画像）" width="1500" height="1000" loading="lazy">
+            <span class="media__note" aria-hidden="true">写真：コンディショニング</span>
+          </div>
           <div class="program-card__body">
             <p class="program-card__no">PROGRAM 02</p>
             <h3 class="program-card__title">CONDITIONING</h3>
             <p class="program-card__ja">コンディショニング</p>
             <p>姿勢や可動域、身体の使い方を見直し、動きやすい状態へ整えます。運動不足の解消や、日常の動作をラクにしたい方にもおすすめです。</p>
             <ul class="tags"><li>一般の方</li><li>初心者</li><li>50分</li></ul>
+            <a href="#reserve" class="btn btn--accent program-card__cta" data-program="conditioning">このプログラムで体験予約<span class="arrow">→</span></a>
           </div>
         </article>
 
-        <article class="program-card reveal">
-          <div class="program-card__img ph" role="img" aria-label="ケガから復帰する選手が段階的な競技復帰トレーニングを行っている様子（仮画像）"><span class="ph__tag">PHOTO / 03</span></div>
+        <article class="program-card program-card--c reveal">
+          <div class="program-card__img media">
+            <img src="images/program-assessment.svg" alt="トレーナーが選手の動作評価を行っている様子（仮画像）" width="1500" height="1000" loading="lazy">
+            <span class="media__note" aria-hidden="true">写真：動作評価</span>
+          </div>
           <div class="program-card__body">
             <p class="program-card__no">PROGRAM 03</p>
             <h3 class="program-card__title">RETURN TO SPORT</h3>
             <p class="program-card__ja">競技復帰サポート</p>
             <p>医療機関でのリハビリを終えた方を対象に、競技に戻るまでの段階的なトレーニングを提供。主治医の方針を確認しながら進めます。</p>
             <ul class="tags"><li>ケガからの復帰</li><li>医療機関と連携</li><li>60分</li></ul>
+            <a href="#reserve" class="btn btn--accent program-card__cta" data-program="return">このプログラムで体験予約<span class="arrow">→</span></a>
           </div>
         </article>
       </div>
@@ -144,27 +157,54 @@
 
         <div class="trainer-list">
           <article class="trainer-card reveal">
-            <div class="trainer-card__img ph ph--portrait" role="img" aria-label="ヘッドトレーナー 佐藤 健のポートレート写真（仮画像）"><span class="ph__tag">PORTRAIT</span></div>
-            <p class="trainer-card__role">HEAD TRAINER</p>
-            <h3 class="trainer-card__name">佐藤 健<span>KEN SATO</span></h3>
-            <p class="trainer-card__cert">理学療法士／ストレングス&amp;コンディショニング系資格</p>
-            <p>動作評価と競技復帰サポートを担当。「なぜ痛むのか」「なぜ伸び悩むのか」を一緒に解き明かします。</p>
+            <div class="trainer-card__img media">
+              <img src="images/trainer-01.svg" alt="ヘッドトレーナー 佐藤 健のポートレート写真（仮画像）" width="800" height="1000" loading="lazy">
+              <span class="media__note" aria-hidden="true">写真：ポートレート</span>
+              <span class="trainer-card__num" aria-hidden="true">01</span>
+            </div>
+            <div class="trainer-card__body">
+              <p class="trainer-card__role">HEAD TRAINER</p>
+              <h3 class="trainer-card__name">佐藤 健<span lang="en">KEN SATO</span></h3>
+              <dl class="trainer-card__meta">
+                <div><dt>資格</dt><dd>理学療法士／ストレングス&amp;コンディショニング系資格</dd></div>
+                <div><dt>専門</dt><dd>動作評価・競技復帰サポート</dd></div>
+              </dl>
+              <p class="trainer-card__text">「なぜ痛むのか」「なぜ伸び悩むのか」を一緒に解き明かします。</p>
+            </div>
           </article>
 
           <article class="trainer-card reveal">
-            <div class="trainer-card__img ph ph--portrait" role="img" aria-label="パフォーマンスコーチ 高橋 美咲のポートレート写真（仮画像）"><span class="ph__tag">PORTRAIT</span></div>
-            <p class="trainer-card__role">PERFORMANCE COACH</p>
-            <h3 class="trainer-card__name">高橋 美咲<span>MISAKI TAKAHASHI</span></h3>
-            <p class="trainer-card__cert">健康運動指導士／元陸上競技選手</p>
-            <p>スプリントとジャンプ指導が専門。基礎から丁寧に、速く動ける身体をつくります。</p>
+            <div class="trainer-card__img media">
+              <img src="images/trainer-02.svg" alt="パフォーマンスコーチ 高橋 美咲のポートレート写真（仮画像）" width="800" height="1000" loading="lazy">
+              <span class="media__note" aria-hidden="true">写真：ポートレート</span>
+              <span class="trainer-card__num" aria-hidden="true">02</span>
+            </div>
+            <div class="trainer-card__body">
+              <p class="trainer-card__role">PERFORMANCE COACH</p>
+              <h3 class="trainer-card__name">高橋 美咲<span lang="en">MISAKI TAKAHASHI</span></h3>
+              <dl class="trainer-card__meta">
+                <div><dt>資格</dt><dd>健康運動指導士／元陸上競技選手</dd></div>
+                <div><dt>専門</dt><dd>スプリント・ジャンプ指導</dd></div>
+              </dl>
+              <p class="trainer-card__text">基礎から丁寧に、速く動ける身体をつくります。</p>
+            </div>
           </article>
 
           <article class="trainer-card reveal">
-            <div class="trainer-card__img ph ph--portrait" role="img" aria-label="コンディショニングコーチ 中村 翔のポートレート写真（仮画像）"><span class="ph__tag">PORTRAIT</span></div>
-            <p class="trainer-card__role">CONDITIONING COACH</p>
-            <h3 class="trainer-card__name">中村 翔<span>SHO NAKAMURA</span></h3>
-            <p class="trainer-card__cert">柔道整復師／パーソナルトレーナー</p>
-            <p>姿勢と可動域の改善を担当。運動が久しぶりの方も安心して始められるよう伴走します。</p>
+            <div class="trainer-card__img media">
+              <img src="images/trainer-03.svg" alt="コンディショニングコーチ 中村 翔のポートレート写真（仮画像）" width="800" height="1000" loading="lazy">
+              <span class="media__note" aria-hidden="true">写真：ポートレート</span>
+              <span class="trainer-card__num" aria-hidden="true">03</span>
+            </div>
+            <div class="trainer-card__body">
+              <p class="trainer-card__role">CONDITIONING COACH</p>
+              <h3 class="trainer-card__name">中村 翔<span lang="en">SHO NAKAMURA</span></h3>
+              <dl class="trainer-card__meta">
+                <div><dt>資格</dt><dd>柔道整復師／パーソナルトレーナー</dd></div>
+                <div><dt>専門</dt><dd>姿勢・可動域の改善</dd></div>
+              </dl>
+              <p class="trainer-card__text">運動が久しぶりの方も安心して始められるよう伴走します。</p>
+            </div>
           </article>
         </div>
         <p class="note">※ 人物・経歴はすべて架空のものです。</p>
@@ -182,18 +222,18 @@
         <p class="sample-badge reveal">SAMPLE ― 以下は掲載イメージ用のサンプル文章です</p>
 
         <div class="voice-list">
-          <figure class="voice-card reveal">
-            <span class="voice-card__sample">サンプル</span>
+          <figure class="voice-item reveal">
+            <span class="voice-item__sample">サンプル</span>
             <blockquote>「測定で自分の弱点が数字で分かり、練習の意味が明確になりました。シーズン中もコンディションを保てています。」</blockquote>
             <figcaption>高校生・バスケットボール部（サンプル）</figcaption>
           </figure>
-          <figure class="voice-card reveal">
-            <span class="voice-card__sample">サンプル</span>
+          <figure class="voice-item reveal">
+            <span class="voice-item__sample">サンプル</span>
             <blockquote>「運動は久しぶりでしたが、できることから段階的に進めてもらえたので続けられています。」</blockquote>
             <figcaption>40代・会社員（サンプル）</figcaption>
           </figure>
-          <figure class="voice-card reveal">
-            <span class="voice-card__sample">サンプル</span>
+          <figure class="voice-item reveal">
+            <span class="voice-item__sample">サンプル</span>
             <blockquote>「リハビリ後、何をどこまでやっていいか不安でしたが、段階ごとに確認しながら競技に戻れました。」</blockquote>
             <figcaption>20代・社会人サッカー（サンプル）</figcaption>
           </figure>
@@ -210,30 +250,41 @@
           <p class="sec-head__ja">料金</p>
         </header>
 
-        <div class="price-list">
-          <div class="price-card price-card--feature reveal">
+        <div class="price-trial reveal">
+          <div class="price-trial__head">
             <p class="price-card__label">TRIAL</p>
             <h3>体験セッション</h3>
-            <p class="price-card__price"><span class="yen">¥</span>3,300<small>／回（税込）</small></p>
-            <p>動作評価＋トレーニング体験。初回の方はこちらから。</p>
+            <p class="price-trial__desc">動作評価＋トレーニング体験。初回の方はこちらから。</p>
           </div>
-          <div class="price-card reveal">
+          <p class="price-card__price"><span class="yen">¥</span>3,300<small>／回（税込）</small></p>
+          <a href="#reserve" class="btn btn--accent price-trial__cta">体験を予約する<span class="arrow">→</span></a>
+        </div>
+
+        <div class="price-list">
+          <div class="price-card price-card--main reveal">
+            <p class="price-card__badge">おすすめ</p>
             <p class="price-card__label">MONTHLY 4</p>
             <h3>月4回プラン</h3>
             <p class="price-card__price"><span class="yen">¥</span>28,600<small>／月（税込）</small></p>
-            <p>週1回ペースで着実に。いちばん人気のプラン。</p>
+            <p class="price-card__unit">1回あたり ¥7,150</p>
+            <p class="price-card__desc">週1回ペースで着実に。いちばん人気のプラン。</p>
+            <a href="#reserve" class="btn btn--accent btn--full">このプランで体験予約<span class="arrow">→</span></a>
           </div>
           <div class="price-card reveal">
             <p class="price-card__label">MONTHLY 8</p>
             <h3>月8回プラン</h3>
             <p class="price-card__price"><span class="yen">¥</span>52,800<small>／月（税込）</small></p>
-            <p>大会前や集中的に取り組みたい方に。</p>
+            <p class="price-card__unit">1回あたり ¥6,600</p>
+            <p class="price-card__desc">大会前や集中的に取り組みたい方に。</p>
+            <a href="#reserve" class="btn btn--full">このプランで体験予約<span class="arrow">→</span></a>
           </div>
           <div class="price-card reveal">
             <p class="price-card__label">SINGLE</p>
             <h3>都度利用</h3>
             <p class="price-card__price"><span class="yen">¥</span>8,800<small>／回（税込）</small></p>
-            <p>ご自身のペースで利用したい方に。</p>
+            <p class="price-card__unit">1回あたり ¥8,800</p>
+            <p class="price-card__desc">ご自身のペースで利用したい方に。</p>
+            <a href="#reserve" class="btn btn--full">このプランで体験予約<span class="arrow">→</span></a>
           </div>
         </div>
         <ul class="note-list">
@@ -326,7 +377,17 @@
         </header>
 
         <div class="access__grid">
-          <div class="access__map ph reveal" role="img" aria-label="MOVE BEYOND周辺の地図。〇〇駅 東口から徒歩5分（仮画像）"><span class="ph__tag">MAP</span></div>
+          <div class="access__media">
+            <div class="access__interior media reveal">
+              <img src="images/access-interior.svg" alt="MOVE BEYOND施設の内観（仮画像）" width="1500" height="1000" loading="lazy">
+              <span class="media__note" aria-hidden="true">写真：施設の内観</span>
+            </div>
+            <div class="access__map media reveal">
+              <img src="images/access-map.svg" alt="MOVE BEYOND周辺の地図。〇〇駅 東口から徒歩5分（仮画像）" width="1500" height="1000" loading="lazy">
+              <span class="media__note" aria-hidden="true">地図（仮画像）</span>
+            </div>
+            <p class="access__map-note">※ 住所は架空のため、実際の地図は表示していません。</p>
+          </div>
           <dl class="access__info reveal">
             <div><dt>施設名</dt><dd>MOVE BEYOND（架空）</dd></div>
             <div><dt>住所</dt><dd>〒000-0000 東京都〇〇区△△ 1-2-3 BEYONDビル 1F（架空）</dd></div>
@@ -348,10 +409,10 @@
             <label>メールアドレス<input type="email" name="email" autocomplete="email" required></label>
             <label>ご希望のプログラム
               <select name="program">
-                <option>PERFORMANCE（パフォーマンス向上）</option>
-                <option>CONDITIONING（コンディショニング）</option>
-                <option>RETURN TO SPORT（競技復帰サポート）</option>
-                <option>まだ決めていない</option>
+                <option value="performance">PERFORMANCE（パフォーマンス向上）</option>
+                <option value="conditioning">CONDITIONING（コンディショニング）</option>
+                <option value="return">RETURN TO SPORT（競技復帰サポート）</option>
+                <option value="undecided">まだ決めていない</option>
               </select>
             </label>
             <label>ご希望日<input type="date" name="date"></label>
