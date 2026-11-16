@@ -166,10 +166,11 @@ ul, ol { padding: 0; list-style: none; }
   font-size: clamp(52px, 15vw, 220px); line-height: .9; letter-spacing: -.005em;
   margin-bottom: 12px;
 }
-.hero__title .line { display: block; overflow: hidden; }
+.hero__title .line { display: block; overflow: hidden; padding-right: .15em; }
 /* 初期状態は表示。アニメーションは from の状態から元に戻るだけ（止まっても文字が消えない） */
 .hero__title .line > span {
   display: inline-block;
+  padding-right: .15em; /* 斜体（BEYOND）の右側のはみ出しが切れないように余白を確保 */
   animation: rise 1s var(--ease) both;
 }
 .hero__title .line:nth-child(2) > span { animation-delay: .12s; }
