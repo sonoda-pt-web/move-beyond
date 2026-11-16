@@ -1,17 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" preserveAspectRatio="xMidYMid slice">
-<!-- Placeholder (CSS/SVG only). Replace with a real photo: see README.md -->
+<!-- Placeholder (CSS/SVG only). Same look as hero.svg: dark gradient + light streaks + perspective lines. Replace with a real photo: see README.md -->
 <defs>
 <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b1b1b"/><stop offset="1" stop-color="#050505"/></linearGradient>
 <radialGradient id="spot" cx="0.62" cy="0.28" r="0.8"><stop offset="0" stop-color="#fff" stop-opacity=".34"/><stop offset=".45" stop-color="#fff" stop-opacity=".07"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
 <radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient>
 <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2f2f2"/><stop offset=".5" stop-color="#8a8a8a"/><stop offset="1" stop-color="#2a2a2a"/></linearGradient>
 <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".85"/></linearGradient>
+<linearGradient id="fadeA" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff4a1c" stop-opacity="0"/><stop offset="1" stop-color="#ff4a1c" stop-opacity=".95"/></linearGradient>
 </defs>
 <rect width="800" height="1000" fill="url(#bg)"/>
 <rect width="800" height="1000" fill="url(#spot)"/>
+<rect y="760" width="800" height="240" fill="#000" fill-opacity="0.3"/><line x1="160" y1="760" x2="-560" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="220" y1="760" x2="-320" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="280" y1="760" x2="-80" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="340" y1="760" x2="160" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="400" y1="760" x2="400" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="460" y1="760" x2="640" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="520" y1="760" x2="880" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="580" y1="760" x2="1120" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="640" y1="760" x2="1360" y2="1000" stroke="#fff" stroke-opacity="0.2" stroke-width="3"/><line x1="0" y1="760" x2="800" y2="760" stroke="#fff" stroke-opacity=".5" stroke-width="2"/>
+<rect x="330" y="170" width="360" height="5" fill="url(#fade)" transform="skewX(-20)"/><rect x="480" y="230" width="240" height="3" fill="url(#fade)" transform="skewX(-20)"/><rect x="300" y="300" width="420" height="8" fill="url(#fade)" transform="skewX(-20)"/><rect x="640" y="250" width="150" height="4" fill="url(#fadeA)" transform="skewX(-20)"/>
 <radialGradient id="rim" cx=".7" cy=".3" r=".9"><stop offset="0" stop-color="#5a5a5a"/><stop offset=".6" stop-color="#1e1e1e"/><stop offset="1" stop-color="#0d0d0d"/></radialGradient>
 <g fill="url(#rim)"><circle cx="400" cy="400" r="150"/><path d="M 120 1000 C 120 760 230 640 400 640 C 570 640 680 760 680 1000 Z"/><rect x="345" y="520" width="110" height="150"/></g>
-<path d="M 525 300 A 150 150 0 0 1 520 510" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="5"/>
-<path d="M 560 700 C 640 760 676 860 680 1000" fill="none" stroke="#fff" stroke-opacity=".3" stroke-width="5"/>
+<path d="M 525 300 A 150 150 0 0 1 520 510" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="5"/><path d="M 560 700 C 640 760 676 860 680 1000" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="5"/>
 <rect width="800" height="1000" fill="url(#vig)"/>
 </svg>

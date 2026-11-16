@@ -303,6 +303,8 @@ ul, ol { padding: 0; list-style: none; }
 .trainer-card__meta div { display: grid; grid-template-columns: 44px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--gray-2); font-size: 14px; line-height: 1.7; }
 .trainer-card__meta dt { font-weight: 700; font-size: 12px; color: var(--gray-3); padding-top: 2px; }
 .trainer-card__meta dd { margin: 0; font-weight: 500; }
+/* 資格・専門：言葉のまとまり（.wb）ごとに折り返し、単語の途中で改行しない */
+.trainer-card__meta .wb { display: inline-block; }
 .trainer-card__text { font-size: 15px; padding: 0 16px; }
 .note { font-size: 13px; color: var(--gray-3); margin-top: 32px; }
 
@@ -514,6 +516,11 @@ ul, ol { padding: 0; list-style: none; }
   .trainer-card__img, .trainer-card__body { width: 100%; }
   .trainer-card__body { margin-top: -32px; margin-right: 24px; width: auto; }
   .trainer-card:nth-child(odd) .trainer-card__body { margin-left: 0; }
+  /* タブレット(768–1023px)は3列で欄が狭いため、項目名を上・内容を下にして幅を確保 */
+  @media (max-width: 1023px) {
+    .trainer-card__meta div { grid-template-columns: 1fr; gap: 0; }
+    .trainer-card__meta dt { padding-top: 0; }
+  }
   .voice-list { grid-template-columns: repeat(3, 1fr); border-top: 0; gap: 40px; }
   .voice-item { border-bottom: 0; border-top: 1px solid #3a3a3a; }
   .price-trial { grid-template-columns: 1fr auto auto; align-items: center; gap: 32px; padding: 26px 32px; }
