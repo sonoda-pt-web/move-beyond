@@ -436,15 +436,52 @@
               <input type="date" id="f-date" name="date" aria-describedby="f-date-error">
               <p class="field-error" id="f-date-error"></p>
             </div>
-            <button type="submit" class="btn btn--invert btn--full">体験を予約する<span class="arrow">→</span></button>
+            <div class="field">
+              <label for="f-time">ご希望の時間帯</label>
+              <select id="f-time" name="time" aria-describedby="f-time-hint f-time-error">
+                <option value="any">指定なし</option>
+                <option value="morning">午前（〜12:00）</option>
+                <option value="afternoon">午後（12:00〜17:00）</option>
+                <option value="evening">夜（17:00〜22:00）</option>
+              </select>
+              <p class="field-hint" id="f-time-hint">※ 土・日・祝は18:00まで（夜の時間帯は平日のみ）</p>
+              <p class="field-error" id="f-time-error"></p>
+            </div>
+            <div class="field">
+              <label for="f-tel">電話番号<span class="opt">任意</span></label>
+              <input type="tel" id="f-tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="例：090-1234-5678" aria-describedby="f-tel-error">
+              <p class="field-error" id="f-tel-error"></p>
+            </div>
+            <div class="privacy" id="f-privacy">
+              <p class="privacy__title">個人情報の取り扱いについて</p>
+              <p>このフォームはデモです。入力内容は外部に送信されず、どこにも保存されません。確認画面・完了画面もこのページの中だけで表示しています。</p>
+            </div>
+            <button type="submit" class="btn btn--invert btn--full" aria-describedby="f-privacy">入力内容を確認する<span class="arrow">→</span></button>
             <p class="form-msg" role="status" aria-live="polite"></p>
-            <p class="note">※ デモサイトのため、送信内容はどこにも送られません。</p>
           </form>
+
+          <div class="form-confirm" id="form-confirm" tabindex="-1" aria-labelledby="form-confirm-title" role="region" hidden>
+            <p class="form-confirm__title" id="form-confirm-title">入力内容の確認</p>
+            <p class="form-confirm__lead">以下の内容でよろしければ「この内容で送信」を押してください。</p>
+            <dl class="form-confirm__list">
+              <div><dt>お名前</dt><dd data-confirm="name"></dd></div>
+              <div><dt>メールアドレス</dt><dd data-confirm="email"></dd></div>
+              <div><dt>電話番号</dt><dd data-confirm="tel"></dd></div>
+              <div><dt>ご希望のプログラム</dt><dd data-confirm="program"></dd></div>
+              <div><dt>ご希望日</dt><dd data-confirm="date"></dd></div>
+              <div><dt>ご希望の時間帯</dt><dd data-confirm="time"></dd></div>
+            </dl>
+            <p class="form-confirm__note">※ デモのため、送信しても入力内容は外部に送られず、保存もされません。</p>
+            <div class="form-confirm__actions">
+              <button type="button" class="btn btn--accent btn--full form-confirm__send">この内容で送信<span class="arrow">→</span></button>
+              <button type="button" class="btn btn--invert btn--full form-confirm__back">修正する</button>
+            </div>
+          </div>
 
           <div class="form-done" id="form-done" tabindex="-1" hidden>
             <p class="form-done__en">THANK YOU<span>（DEMO）</span></p>
             <p class="form-done__title">デモのため送信されていません</p>
-            <p>入力内容の確認までを再現したデモです。実際の予約は受け付けておらず、入力内容はどこにも送られていません。</p>
+            <p>入力から確認・完了までを再現したデモです。実際の予約は受け付けておらず、入力内容はどこにも送られていません。</p>
             <button type="button" class="btn btn--invert form-done__back">入力画面に戻る</button>
           </div>
         </div>
@@ -461,7 +498,7 @@
     </div>
   </footer>
 
-  <a href="#reserve" class="fab" aria-label="体験を予約する">RESERVE</a>
+  <a href="#reserve" class="fab"><span class="fab__en" lang="en">RESERVE</span><span class="fab__ja">体験を予約する</span><span class="arrow" aria-hidden="true">→</span></a>
 
   <script src="script.js"></script>
 </body>
