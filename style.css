@@ -279,9 +279,12 @@ ul, ol { padding: 0; list-style: none; }
 .program-card__body { padding: 28px 22px 30px; }
 .program-card__cta { margin-top: 24px; width: 100%; }
 /* 02: 写真の上に本文ボックスを重ねる */
-.program-card--b { background: none; border: 0; }
-.program-card--b .program-card__img { border: var(--line) solid var(--black); margin-right: calc(var(--gutter) * -1); }
-.program-card--b .program-card__body { position: relative; margin: -56px 16px 0 0; background: var(--white); border: var(--line) solid var(--black); }
+/* 2枚目のずらし配置はタブレット・PC（768px以上）だけ。スマホは1枚目と同じ形 */
+@media (min-width: 768px) {
+  .program-card--b { background: none; border: 0; }
+  .program-card--b .program-card__img { border: var(--line) solid var(--black); margin-right: calc(var(--gutter) * -1); }
+  .program-card--b .program-card__body { position: relative; margin: -56px 16px 0 0; background: var(--white); border: var(--line) solid var(--black); }
+}
 /* 03: 黒地。写真の左上に番号 */
 .program-card--c { background: var(--black); color: var(--white); }
 .program-card--c .program-card__img { border-bottom-color: var(--black); }
